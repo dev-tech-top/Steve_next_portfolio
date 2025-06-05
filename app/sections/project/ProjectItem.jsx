@@ -13,7 +13,6 @@ export function ProjectItem({ project, index }) {
 	const cardRef = useRef(null);
 	const isInView = useInView(cardRef, { once: true });
 
-
 	return (
 		<article
 			ref={cardRef}
@@ -30,7 +29,7 @@ export function ProjectItem({ project, index }) {
 				<div className="aspect-[12/9.2] w-full h-full">
 					<Suspense fallback={<Loader />}>
 						<ImageGallery
-							items={project.images}
+							items={images}
 							showPlayButton={false}
 							showThumbnails={false}
 							showIndex

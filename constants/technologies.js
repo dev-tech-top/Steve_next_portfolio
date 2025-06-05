@@ -2,7 +2,7 @@
 import { AiFillHtml5, AiOutlineAntDesign, AiFillGithub, AiFillGitlab } from "react-icons/ai";
 import { DiCss3, DiVisualstudio, DiPostgresql, DiMysql } from "react-icons/di";
 import { IoLogoJavascript } from "react-icons/io";
-import { FaReact, FaWordpressSimple, FaFigma, FaTrello, FaPhp, FaNodeJs, FaAws, FaDrupal, FaDocker } from "react-icons/fa";
+import { FaReact, FaWordpressSimple, FaFigma, FaTrello, FaPhp, FaNode, FaAws, FaDrupal, FaDocker } from "react-icons/fa";
 import { SiTypescript, SiJquery, SiStrapi, SiComposer, SiDrupal, SiNginx, SiVercel, SiNetlify, SiPostman, SiJest, SiCypress } from "react-icons/si";
 import { BsBootstrap, BsFiletypeSass } from "react-icons/bs";
 import { TbBrandNextjs, TbBrandTailwind, TbBrandMongodb } from "react-icons/tb";
@@ -36,7 +36,7 @@ export const TECHNOLOGIES = [
 	{
 		category: "Backend & CMS",
 		items: [
-			{ name: "Node.js", icon: <FaNodeJs size={32} /> },
+			{ name: "Node.js", icon: <FaNode size={32} /> },
 			{ name: "Express.js", icon: <ExpressIcon size={32} /> },
 			{ name: "PHP", icon: <FaPhp size={32} /> },
 			{ name: "MySQL", icon: <DiMysql size={32} /> },
