@@ -1,13 +1,9 @@
 import { Suspense, useRef } from "react";
 import { domAnimation, LazyMotion, useInView } from "framer-motion";
-import Link from "next/link";
-import useSWR from "swr";
 import { HeadingDivider, Loader } from "components";
-import { fetcher } from "utils/fetcher";
 import Error from "../../error";
 import { ErrorBoundary } from "react-error-boundary";
 import { Projects } from "../../projects/components/Projects";
-import { SITE_ROUTES } from "../../../constants";
 
 export function ProjectsSection() {
 	const btnRef = useRef(null);

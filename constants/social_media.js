@@ -1,12 +1,12 @@
 import { BsFillEnvelopeOpenFill, BsGithub, BsLinkedin } from "react-icons/bs";
 
 export const SOCIAL_MEDIA = [
-	{
-		id: "linkedin",
-		icon: <BsLinkedin />,
-		title: "Visit LinkedIn profile",
-		url: "https://www.linkedin.com/in/steve-bayard-9843a5369/"
-	},
+	// {
+	// 	id: "linkedin",
+	// 	icon: <BsLinkedin />,
+	// 	title: "Visit LinkedIn profile",
+	// 	url: "https://www.linkedin.com/in/steve-bayard-9843a5369/"
+	// },
 	{
 		id: "github",
 		icon: <BsGithub />,
