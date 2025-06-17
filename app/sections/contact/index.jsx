@@ -77,8 +77,9 @@ export const ContactSection = () => {
 
     return (
         <LazyMotion features={domAnimation}>
+            <HeadingDivider title="Contact Me" />
+
             <section id="tech" className="section px-4 py-8 max-w-md mx-auto">
-                <HeadingDivider title="Contact Me" />
                 <div ref={ref}>
                     {submitted ? (
                         <motion.p
@@ -87,7 +88,7 @@ export const ContactSection = () => {
                             transition={{ duration: 0.5 }}
                             className="text-center text-green-600 font-semibold mt-8"
                         >
-                            Thank you for reaching out! I'll get back to you soon.
+                            Thank you for reaching out! I&apos;ll get back to you soon.
                         </motion.p>
                     ) : (
                         <motion.form

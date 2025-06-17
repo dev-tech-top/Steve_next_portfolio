@@ -1,4 +1,4 @@
-import { BsFillEnvelopeOpenFill, BsGithub, BsLinkedin } from "react-icons/bs";
+import { BsFillEnvelopeOpenFill, BsGithub, BsTwitter } from "react-icons/bs";
 
 export const SOCIAL_MEDIA = [
 	{
@@ -8,15 +8,10 @@ export const SOCIAL_MEDIA = [
 		url: "https://github.com/dev-tech-top"
 	},
 	{
-		id: "mail",
-		icon: <BsFillEnvelopeOpenFill />,
-		title: "Send me an email",
-		url: "mailto://steve.bayard226@outlook.com"
+		id: "BsTwitter",
+		icon: <BsTwitter />,
+		title: "Visit Github profile",
+		url: "https://x.com/steve_bayard226"
 	},
-	{
-		id: "mail",
-		icon: <BsFillEnvelopeOpenFill />,
-		title: "Send me an email",
-		url: "mailto://steve.bayard226@outlook.com"
-	}
+
 ];
