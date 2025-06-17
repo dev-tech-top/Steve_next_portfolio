@@ -4,3 +4,4 @@ export * from "./technologies";
 export * from "./project";
 export * from "./project/ProjectItem";
 export * from "./work";
+export * from "./contact";
