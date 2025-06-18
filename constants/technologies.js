@@ -23,14 +23,11 @@ export const TECHNOLOGIES = [
 			{ name: "SASS/SCSS", icon: <BsFiletypeSass size={32} /> },
 			{ name: "JavaScript", icon: <IoLogoJavascript size={32} /> },
 			{ name: "TypeScript", icon: <SiTypescript size={32} /> },
-			{ name: "jQuery", icon: <SiJquery size={32} /> },
 			{ name: "React.js", icon: <FaReact size={32} /> },
 			{ name: "Next.js", icon: <TbBrandNextjs size={32} /> },
 			{ name: "Tailwind CSS", icon: <TbBrandTailwind size={32} /> },
-			{ name: "Material UI", icon: <MuiIcon size={32} /> },
-			{ name: "Ant Design", icon: <AiOutlineAntDesign size={32} /> },
-			{ name: "Bootstrap", icon: <BsBootstrap size={32} /> },
-			{ name: "Shadcn UI", icon: <Zap className="text-purple-500" size={32} /> }
+			{ name: "Shadcn UI", icon: <Zap className="text-purple-500" size={32} /> },
+			{ name: "Ant Design", icon: <AiOutlineAntDesign size={32} /> }
 		]
 	},
 	{
@@ -39,12 +36,11 @@ export const TECHNOLOGIES = [
 			{ name: "Node.js", icon: <FaNode size={32} /> },
 			{ name: "Express.js", icon: <ExpressIcon size={32} /> },
 			{ name: "PHP", icon: <FaPhp size={32} /> },
-			{ name: "MySQL", icon: <DiMysql size={32} /> },
 			{ name: "PostgreSQL", icon: <DiPostgresql size={32} /> },
+			{ name: "MySQL", icon: <DiMysql size={32} /> },
 			{ name: "MongoDB", icon: <TbBrandMongodb size={32} /> },
-			{ name: "Drupal", icon: <FaDrupal size={32} /> },
 			{ name: "Strapi", icon: <SiStrapi size={32} /> },
-			{ name: "Headless WordPress", icon: <FaWordpressSimple size={32} /> },
+			{ name: "Drupal", icon: <FaDrupal size={32} /> },
 			{ name: "Composer", icon: <SiComposer size={32} /> },
 			{ name: "Drush", icon: <SiDrupal size={32} /> }
 		]
@@ -53,24 +49,25 @@ export const TECHNOLOGIES = [
 		category: "DevOps & Deployment",
 		items: [
 			{ name: "GitHub", icon: <AiFillGithub size={32} /> },
+			{ name: "GitHub Actions", icon: <SiGithubactions size={32} /> },
 			{ name: "GitLab", icon: <AiFillGitlab size={32} /> },
 			{ name: "Docker", icon: <FaDocker size={32} /> },
 			{ name: "Nginx", icon: <SiNginx size={32} /> },
 			{ name: "AWS", icon: <FaAws size={32} /> },
 			{ name: "Vercel", icon: <SiVercel size={32} /> },
-			{ name: "Netlify", icon: <SiNetlify size={32} /> }
+			{ name: "Netlify", icon: <SiNetlify size={32} /> },
 		]
 	},
 	{
 		category: "Tools & Testing",
 		items: [
+			{ name: "VS Code", icon: <DiVisualstudio size={32} /> },
+			{ name: "WebStorm", icon: <WebstormIcon size={32} /> },
 			{ name: "Jira", icon: <JiraIcon size={32} /> },
 			{ name: "Trello", icon: <FaTrello size={32} /> },
 			{ name: "Figma", icon: <FaFigma size={32} /> },
 			{ name: "Zeplin", icon: <ZeplinIcon size={32} /> },
 			{ name: "Adobe XD", icon: <AdobeXDIcon size={32} /> },
-			{ name: "VS Code", icon: <DiVisualstudio size={32} /> },
-			{ name: "WebStorm", icon: <WebstormIcon size={32} /> },
 			{ name: "Postman", icon: <SiPostman size={32} /> },
 			{ name: "Jest", icon: <SiJest size={32} /> },
 			{ name: "Cypress", icon: <SiCypress size={32} /> },
