@@ -3,7 +3,7 @@ import { AiFillHtml5, AiOutlineAntDesign, AiFillGithub, AiFillGitlab } from "rea
 import { DiCss3, DiVisualstudio, DiPostgresql, DiMysql } from "react-icons/di";
 import { IoLogoJavascript } from "react-icons/io";
 import { FaReact, FaWordpressSimple, FaFigma, FaTrello, FaPhp, FaNode, FaAws, FaDrupal, FaDocker } from "react-icons/fa";
-import { SiTypescript, SiJquery, SiStrapi, SiComposer, SiDrupal, SiNginx, SiVercel, SiNetlify, SiPostman, SiJest, SiCypress } from "react-icons/si";
+import { SiTypescript, SiJquery, SiStrapi, SiComposer, SiDrupal, SiNginx, SiVercel, SiNetlify, SiPostman, SiJest, SiCypress, SiGithubactions } from "react-icons/si";
 import { BsBootstrap, BsFiletypeSass } from "react-icons/bs";
 import { TbBrandNextjs, TbBrandTailwind, TbBrandMongodb } from "react-icons/tb";
 import AdobeXDIcon from "public/assets/svg/adobexd.svg";
