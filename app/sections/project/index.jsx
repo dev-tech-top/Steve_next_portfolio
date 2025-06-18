@@ -42,7 +42,7 @@ export function ProjectsSection() {
 
 			liveUrl: "https://www.covenanthealth.ca/",
 			stack: [
-				"drupal", "php", "twig", "html5", "css3", "sass/scss", "javascript (es6+)", "jquery", "composer", "drush", "postman", "git", "pantheon"
+				"Drupal", "PHP", "twig", "HTML5", "CSS3", "Sass/Scss", "javascript (es6+)", "jquery", "composer", "drush", "postman", "git", "pantheon"
 			],
 			title: "Health services provider"
 		},
@@ -59,7 +59,7 @@ export function ProjectsSection() {
 				})),
 			liveUrl: "https://paqt.chat/",
 			stack: [
-				"react", "tailwind css", "scss", "node", "websockets", "socket.io", "restful", "graphql", "postgresql", "jwt", "oauth 2.0", "aws", "docker", "github", "github actions"
+				"React", "tailwind css", "Scss", "Node", "websockets", "socket.io", "restful", "graphql", "postgresql", "jwt", "oauth 2.0", "aws", "docker", "github", "github actions"
 			],
 			title: "Legal-tech SaaS platform"
 		}
