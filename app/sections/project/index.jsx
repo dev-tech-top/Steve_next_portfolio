@@ -23,24 +23,8 @@ export function ProjectsSection() {
 				})),
 			liveUrl: "https://strideon.ca/",
 			stack: [
-				"Next",
-				"React",
-				"TypeScript",
-				"Tailwind CSS",
-				"Emotion",
-				"Sass",
-				"Redux",
-				"Zustand",
-				"Ant Design",
-				"Shadcn UI",
-				"Node",
-				"Express",
-				"Next API",
-				"GraphQL",
-				"Strapi",
-				"NextAuth.js",
-				"Firebase Auth",
-				"Auth0"
+				"Next.js", "React", "TypeScript", "Tailwind CSS", "Shadcn UI", "Zustand", "Node.js", "Express",
+				"Next.js API Routes", "GraphQL", "Prisma", "Stripe", "strapi", "NextAuth.js", "Vercel"
 			],
 			title: "Online fashion retail platform"
 		},
@@ -58,19 +42,7 @@ export function ProjectsSection() {
 
 			liveUrl: "https://www.covenanthealth.ca/",
 			stack: [
-				"Drupal 10",
-				"PHP",
-				"Twig",
-				"HTML5",
-				"CSS3",
-				"SASS/SCSS",
-				"JavaScript (ES6+)",
-				"jQuery",
-				"Composer",
-				"Drush",
-				"Postman",
-				"Git",
-				"Pantheon"
+				"drupal", "php", "twig", "html5", "css3", "sass/scss", "javascript (es6+)", "jquery", "composer", "drush", "postman", "git", "pantheon"
 			],
 			title: "Health services provider"
 		},
@@ -87,25 +59,7 @@ export function ProjectsSection() {
 				})),
 			liveUrl: "https://paqt.chat/",
 			stack: [
-				"React",
-				"Vue",
-				"Tailwind CSS",
-				"Bootstrap",
-				"SCSS",
-				"Node",
-				"PHP",
-				"WebSockets",
-				"Socket.IO",
-				"RESTful",
-				"GraphQL",
-				"PostgreSQL",
-				"OAuth 2.0",
-				"JWT",
-				"AWS",
-				"Heroku",
-				"Jenkins",
-				"GitHub",
-				"Docker"
+				"react", "tailwind css", "scss", "node", "websockets", "socket.io", "restful", "graphql", "postgresql", "jwt", "oauth 2.0", "aws", "docker", "github", "github actions"
 			],
 			title: "Legal-tech SaaS platform"
 		}
