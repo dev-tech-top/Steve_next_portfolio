@@ -5,9 +5,9 @@ import { LazyMotion, domAnimation, useInView } from "framer-motion";
 import { HeadingDivider, Loader } from "components";
 
 const TimeLineData = [
-    { year: "May 2022  –  Apr 2025", title: "Senior Software Engineer", company: "Symetris", text: "Built secure healthcare platforms with React, Next.js, Node.js, and PostgreSQL.", location: "Montreal, QC " },
-    { year: "May 2020  –  Apr 2022", title: "Full-Stack Developer", company: "CodeHarbor Studio ", text: "Developed e-commerce and B2B apps using React, Node.js, and Stripe.", location: "Ontario" },
-    { year: "Aug 2017  –  Jan 2020", title: "Full-Stack Developer", company: "Paradem Consulting ", text: "Delivered custom web apps with React and Node.js for various sectors.", location: "Montreal, QC" },
+    { year: "May 2022  –  Apr 2025", title: "Senior Software Engineer", company: "Symetris", text: "Built secure e-commerce platforms with React, Next.js, Node.js, and PostgreSQL. - Developed REST APIs and integrated payment gateways", location: "Montreal, QC " },
+    { year: "May 2020  –  Apr 2022", title: "Full-Stack Developer", company: "CodeHarbor Studio ", text: "Built scalable applications for startups and SMEs, including healthcare and B2B platforms. - Created responsive frontends using React, Next.js, Shadcn UI, and Chakra UI.", location: "Ontario" },
+    { year: "Aug 2017  –  Jan 2020", title: "Full-Stack Developer", company: "Paradem Consulting ", text: "Delivered custom web apps with React and Node.js for various sectors. - Implemented secure authentication and RBAC.", location: "Montreal, QC" },
 ];
 
 export function WorkSection() {
@@ -93,7 +93,10 @@ export function WorkSection() {
                                         <h2 className="ml-1">{`${item.year}`}</h2>
                                     </div>
                                     <p className="tracking-wide " tabIndex="0">
-                                        {item.text}
+                                        {item.text.split(" - ").map((text, i) => {
+                                            return (<span key={i} className="block mt-2"> • {text}</span>)
+
+                                        })}
                                     </p>
                                 </li>
                             );
