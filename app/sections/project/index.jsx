@@ -31,7 +31,6 @@ export function ProjectsSection() {
 				"Sass",
 				"Redux",
 				"Zustand",
-				"Material-UI",
 				"Ant Design",
 				"Shadcn UI",
 				"Node",

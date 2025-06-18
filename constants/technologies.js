@@ -27,6 +27,7 @@ export const TECHNOLOGIES = [
 			{ name: "React.js", icon: <FaReact size={32} /> },
 			{ name: "Next.js", icon: <TbBrandNextjs size={32} /> },
 			{ name: "Tailwind CSS", icon: <TbBrandTailwind size={32} /> },
+			{ name: "Material UI", icon: <MuiIcon size={32} /> },
 			{ name: "Ant Design", icon: <AiOutlineAntDesign size={32} /> },
 			{ name: "Bootstrap", icon: <BsBootstrap size={32} /> },
 			{ name: "Shadcn UI", icon: <Zap className="text-purple-500" size={32} /> }
