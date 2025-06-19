@@ -16,7 +16,7 @@ export function ProjectItem({ project, index }) {
 	return (
 		<article
 			ref={cardRef}
-			className="flex flex-col rounded-lg bg-card-light dark:bg-card-dark"
+			className="flex flex-col rounded-lg bg-card-light"
 			style={{
 				transform: isInView
 					? "none"
@@ -57,7 +57,7 @@ export function ProjectItem({ project, index }) {
 								<span
 									key={tag}
 									tabIndex="0"
-									className="px-2 text-sm leading-normal rounded bg-badge-light/50 dark:bg-badge-dark"
+									className="px-2 text-sm leading-normal rounded bg-badge-light/50"
 								>
 									{tag}
 								</span>
@@ -81,11 +81,11 @@ export function ProjectItem({ project, index }) {
 							<Link
 								href={liveUrl}
 								target="_blank"
-								className="icon-link-btn"
+								className="icon-link-btn flex align-center gap-2 justify-center"
 								title="Go to live address"
 							>
-								<FiExternalLink />
-								<span>Demo</span>
+								<FiExternalLink className="mt-1"/>
+								<div className="flex">Demo</div>
 							</Link>
 						)}
 					</div>

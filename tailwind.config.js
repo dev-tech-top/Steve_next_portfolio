@@ -5,13 +5,12 @@ module.exports = {
 		"./pages/**/*.{js,ts,jsx,tsx}",
 		"./components/**/*.{js,ts,jsx,tsx}"
 	],
-	darkMode: "class",
+	darkMode: false,
 	theme: {
 		extend: {
 			colors: {
 				brand: {
 					light: "#FBF8F3",
-					dark: "#232332",
 					purple: "#7928CA",
 					pink: "#FF0080"
 				},
@@ -21,11 +20,9 @@ module.exports = {
 					normal: "#025091"
 				},
 				card: {
-					dark: "rgba(255, 255, 255, 0.04)",
 					light: "rgba(255, 255, 255, 0.80)"
 				},
 				badge: {
-					dark: "rgba(226, 232, 240, 0.16)",
 					light: "#F8F0E3"
 				}
 			},
