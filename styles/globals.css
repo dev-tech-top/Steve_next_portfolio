@@ -24,3 +24,7 @@ body, * {
   background: #fff;
   border-radius: 8px;
 }
+/* body {
+  background: linear-gradient(135deg, #f7fafc 0%, #e3e9f7 100%);
+  color: #1a202c;
+} */
