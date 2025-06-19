@@ -19,7 +19,7 @@
 }
 
 .gallery-item .image-gallery-slide img {
-	@apply h-[inherit] w-[inherit] object-cover;
+	@apply w-full h-full object-cover bg-[#f6f6f6];
 }
 
 .gallery-item :is(.image-gallery-left-nav, .image-gallery-right-nav) {

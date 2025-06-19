@@ -16,8 +16,9 @@ export function ProjectItem({ project, index }) {
 	return (
 		<article
 			ref={cardRef}
-			className="flex flex-col rounded-lg bg-card-light"
+			className="flex flex-col rounded-3xl bg-card-light shadow-xl border border-gray-100"
 			style={{
+				borderRadius: '1.5rem',
 				transform: isInView
 					? "none"
 					: `${index === 0 ? "translateY(250px)" : `translateY(${200 / index}px)`}`,

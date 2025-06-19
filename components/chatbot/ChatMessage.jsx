@@ -5,7 +5,7 @@ const ChatMessage = ({ msg, realIdx, AVATARS, botTyping, typingText, copiedIdx, 
   const isUser = msg.from === 'user';
   return (
     <div
-      className={`flex ${isUser ? 'justify-end' : 'justify-start'} items-end my-0 relative group`}
+      className={`flex ${isUser ? 'justify-end' : 'justify-start'} items-end my-2 relative group`}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
