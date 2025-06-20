@@ -4,11 +4,24 @@ import emailjs from "@emailjs/browser";
 import { HeadingDivider } from "components";
 import CalendlyWidget from "components/CalendlyWidget";
 
+function LoadingSpinner() {
+    return (
+        <div className="flex flex-col items-center justify-center w-full h-full">
+            <svg className="animate-spin" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="24" cy="24" r="20" stroke="#90caf9" strokeWidth="6" opacity="0.3" />
+                <path d="M44 24a20 20 0 0 1-20 20" stroke="#1976d2" strokeWidth="6" strokeLinecap="round" />
+            </svg>
+            <span className="mt-2 text-blue-700 font-medium">Loading calendar…</span>
+        </div>
+    );
+}
+
 export const ContactSection = () => {
     const [form, setForm] = useState({ name: "", email: "", message: "" });
     const [submitted, setSubmitted] = useState(false);
     const [loading, setLoading] = useState(false);
     const [isCalendlyOpen, setCalendlyOpen] = useState(false);
+    const [calendlyLoading, setCalendlyLoading] = useState(true);
 
     const SERVICE_ID = "service_58h6mit";
     const TEMPLATE_ID = "template_mu89okn";
@@ -173,8 +186,14 @@ export const ContactSection = () => {
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
                             </svg>
                         </button>
-                        <div className="w-full h-full flex items-center justify-center p-0 md:p-6">
-                            <CalendlyWidget />
+                        <div className="w-full h-full flex items-center justify-center p-0 md:p-6 relative">
+                            {/* Show spinner absolutely over the widget, so widget is always mounted */}
+                            <div style={{ position: 'absolute', inset: 0, zIndex: 2, display: calendlyLoading ? 'flex' : 'none', alignItems: 'center', justifyContent: 'center', background: 'rgba(255,255,255,0.7)' }}>
+                                {calendlyLoading && <LoadingSpinner />}
+                            </div>
+                            <div style={{ width: '100%', height: '100%' }}>
+                                <CalendlyWidget onLoad={() => setCalendlyLoading(false)} />
+                            </div>
                         </div>
                     </motion.div>
                 </div>

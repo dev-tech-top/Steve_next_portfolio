@@ -1,13 +1,18 @@
 import { useEffect } from 'react';
 
-const CalendlyWidget = () => {
+const CalendlyWidget = ({ onLoad }) => {
     useEffect(() => {
         const script = document.createElement('script');
         script.src = 'https://assets.calendly.com/assets/external/widget.js';
         script.async = true;
         script.type = 'text/javascript';
+        script.onload = () => { if (onLoad) onLoad(); };
         document.body.appendChild(script);
-    }, []);
+        // If Calendly already loaded, call onLoad immediately
+        if (window.Calendly) {
+            onLoad && onLoad();
+        }
+    }, [onLoad]);
 
     return (
         <div
