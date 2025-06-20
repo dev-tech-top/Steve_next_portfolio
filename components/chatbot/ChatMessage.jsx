@@ -43,6 +43,7 @@ const ChatMessage = ({ msg, realIdx, AVATARS, botTyping, typingText, copiedIdx, 
             ? 'bg-gradient-to-br from-blue-50 to-blue-100 border border-blue-100 text-blue-900 rounded-br-lg ml-6'
             : 'bg-gradient-to-br from-gray-50 to-gray-100 border border-gray-100 text-gray-800 rounded-bl-lg mr-6'}
           ${androidStyle ? (isUser ? 'self-end' : 'self-start') : ''}
+          ${!isUser && !botTyping && realIdx !== undefined && realIdx === copiedIdx ? 'ring-2 ring-blue-200 animate-pulse' : ''}
         `}
       >
         <span className="flex-1 min-w-0 break-words">
