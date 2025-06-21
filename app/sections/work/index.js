@@ -57,15 +57,42 @@ export function WorkSection() {
         };
     }, []);
 
+    // Utility: Markdown-style hierarchical timeline rendering
+    function TimelineMarkdown() {
+        return (
+            <div className="prose max-w-none my-8">
+                {TimeLineData.map((item, idx) => (
+                    <div key={idx} className="mb-8">
+                        <h3 className="font-bold text-lg mb-1">{item.title}</h3>
+                        <ul className="ml-4 list-disc">
+                            <li><strong>Company:</strong> {item.company.trim()}</li>
+                            <li><strong>Location:</strong> {item.location.trim()}</li>
+                            <li><strong>Period:</strong> {item.year}</li>
+                            <li><strong>Details:</strong>
+                                <ul className="ml-4 list-[circle] mt-1">
+                                    {item.text.split(" - ").map((t, i) => (
+                                        <li key={i}>{t.trim().replace(/^\./, "")}</li>
+                                    ))}
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                ))}
+            </div>
+        );
+    }
+
     return (
         <LazyMotion features={domAnimation}>
             <section id="work" className="section">
                 <HeadingDivider title="Work Experience" />
+                {/* Timeline carousel UI */}
                 <ul
                     ref={carouselRef}
                     onScroll={handleScroll}
-                    className="flex flex-row flex-nowrap gap-5 justify-between overflow-x-auto snap-x cursor-pointer hide-scroll-bar mt-4"
+                    className="flex flex-row flex-nowrap gap-5 justify-between overflow-x-auto snap-x cursor-pointer hide-scroll-bar mt-4  md:grid-cols-3"
                 >
+                    {/* ...existing timeline carousel code... */}
                     <>
                         {TimeLineData.map((item, index) => {
                             return (
@@ -79,11 +106,9 @@ export function WorkSection() {
                                             ? "none"
                                             : `${index === 0 ? "translateY(250px)" : `translateY(${200 / index}px)`}`,
                                         opacity: isInView ? 1 : 0,
-                                        transition: `all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) ${index === 0 ? 0.5 : 1.05 * index
-                                            }s`
+                                        transition: `all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) ${index === 0 ? 0.5 : 1.05 * index}s`
                                     }}
                                 >
-
                                     <p className="font-bold text-xl">{`${item.title}`}</p>
                                     <div className="flex flex-col flex-wrap gap-x-2">
                                         <div className="flex flex-wrap items-center gap-x-2 snap-start text-sm sm:text-base">
@@ -95,7 +120,6 @@ export function WorkSection() {
                                     <p className="tracking-wide " tabIndex="0">
                                         {item.text.split(" - ").map((text, i) => {
                                             return (<span key={i} className="block mt-2"> • {text}</span>)
-
                                         })}
                                     </p>
                                 </li>
@@ -103,8 +127,9 @@ export function WorkSection() {
                         })}
                     </>
                 </ul>
+                {/* Markdown-style hierarchical timeline below carousel */}
+                <TimelineMarkdown />
             </section>
-
         </LazyMotion>
     );
 }
