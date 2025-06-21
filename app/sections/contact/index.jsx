@@ -187,13 +187,16 @@ export const ContactSection = () => {
                             </svg>
                         </button>
                         <div className="w-full h-full flex items-center justify-center p-0 md:p-6 relative">
-                            {/* Show spinner absolutely over the widget, so widget is always mounted */}
-                            <div style={{ position: 'absolute', inset: 0, zIndex: 2, display: calendlyLoading ? 'flex' : 'none', alignItems: 'center', justifyContent: 'center', background: 'rgba(255,255,255,0.7)' }}>
-                                {calendlyLoading && <LoadingSpinner />}
-                            </div>
+                            {/* Always show the calendar widget immediately */}
                             <div style={{ width: '100%', height: '100%' }}>
                                 <CalendlyWidget onLoad={() => setCalendlyLoading(false)} />
                             </div>
+                            {/* Overlay loading message only while loading */}
+                            {calendlyLoading && (
+                                <div style={{ position: 'absolute', inset: 0, zIndex: 2, display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'rgba(255,255,255,0.7)' }}>
+                                    <span className="mt-2 text-blue-700 font-medium text-lg">Loading calendar…</span>
+                                </div>
+                            )}
                         </div>
                     </motion.div>
                 </div>
