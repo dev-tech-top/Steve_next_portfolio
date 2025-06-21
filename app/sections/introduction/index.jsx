@@ -71,15 +71,15 @@ export function WelcomeSection() {
 									className="absolute flex flex-col transition-all duration-500 ease-in-expo"
 									style={{
 										top:
-											count === 0
-												? "0"
-												: count === 1
-												? "-100%"
-												: count === 2
-												? "-200%"
-												: count === 3
-												? "-300%"
-												: "0",
+										count === 0
+											? "0"
+											: count === 1
+											? "-100%"
+											: count === 2
+											? "-200%"
+											: count === 3
+											? "-300%"
+											: "0",
 										left: "13px"
 									}}
 								>
@@ -92,6 +92,7 @@ export function WelcomeSection() {
 
 						<div
 							ref={ref}
+							className="mt-4"
 							style={{
 								transform: isInView ? "none" : "translateY(50px)",
 								opacity: isInView ? 1 : 0,

@@ -70,7 +70,7 @@ export function ProjectsSection() {
 				<HeadingDivider title="Latest projects" />
 				<div className="h-10 md:h-14" />
 
-				<div className="flex flex-col items-center gap-8 md:gap-14">
+				<div className="flex flex-col items-center gap-8 md:gap-14 w-full">
 					<Suspense
 						fallback={
 							<div className="flex-center">
@@ -79,7 +79,9 @@ export function ProjectsSection() {
 						}
 					>
 						<ErrorBoundary FallbackComponent={Error}>
-							<Projects projects={projects} />
+							<div className="w-full">
+								<Projects projects={projects} />
+							</div>
 						</ErrorBoundary>
 					</Suspense>
 				</div>

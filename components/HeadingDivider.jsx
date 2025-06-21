@@ -5,7 +5,7 @@ import { initial, animate, exit, transition } from "utils/motions";
 
 export function HeadingDivider({ title = "" }) {
 	return (
-		<header className="flex items-center">
+		<header className="flex items-center my-8 md:my-12 lg:my-16">
 			<LazyMotion features={domAnimation}>
 				<m.h2
 					tabIndex="0"
