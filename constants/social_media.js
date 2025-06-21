@@ -5,25 +5,25 @@ export const SOCIAL_MEDIA = [
 		id: "github",
 		icon: <BsGithub />,
 		title: "Visit Github profile",
-		url: "https://github.com/lytro-dev"
+		url: "https://bit.ly/lytro-git"
 	},
 	{
 		id: "BsStackOverflow",
 		icon: <BsStackOverflow />,
 		title: "Visit Stack Overflow profile",
-		url: "https://stackoverflow.com/users/30721005/lytro"
+		url: "https://bit.ly/lytro-stack"
 	},
 	{
 		id: "BsTwitter",
 		icon: <BsTwitterX />,
 		title: "Visit Github profile",
-		url: "https://x.com/steve_bayard226"
+		url: "https://bit.ly/lytro-x"
 	},
 	{
 		id: "BsTelegram",
 		icon: <BsTelegram />,
 		title: "Contact me on Telegram",
-		url: "https://web.telegram.org/k/#@lytrodev"
+		url: "https://bit.ly/4nbcZh5"
 	},
 
 ];
