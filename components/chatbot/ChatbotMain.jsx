@@ -33,7 +33,7 @@ const AVATARS = {
 };
 
 const defaultWelcome = [
-  { from: 'bot', text: "Hi\nI am a Steve Bayard's Beaver.\nHow can I help you?" }
+  { from: 'bot', text: "Hi\nI am a Steve Bayard.\nHow can I help you?" }
 ];
 
 const Chatbot = () => {

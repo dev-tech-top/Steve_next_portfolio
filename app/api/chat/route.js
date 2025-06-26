@@ -38,14 +38,21 @@ export async function POST(req) {
                 'Authorization': `Bearer ${apiKey}`,
             },
             body: JSON.stringify({
-                model: 'openai/gpt-3.5-turbo',
+                model: 'openrouter/auto',
                 messages: messagesArr,
                 max_tokens,
             }),
         });
 
         const data = await response.json();
-        let botReply = data.choices?.[0]?.message?.content || 'Sorry, I could not answer that.';
+        let botReply;
+        if (data.choices?.[0]?.message?.content) {
+            botReply = data.choices[0].message.content;
+        } else if (data.error) {
+            botReply = 'Sorry, there was an error processing your request. Please try again later.';
+        } else {
+            botReply = "I'm not sure how to answer that. Could you rephrase or ask something else?";
+        }
         return NextResponse.json({ reply: botReply, raw: data });
     } catch (error) {
         console.error('OpenRouter API fetch error:', error);
